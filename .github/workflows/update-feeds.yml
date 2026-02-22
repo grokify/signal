@@ -1,0 +1,61 @@
+name: Update Feeds
+
+on:
+  schedule:
+    # Run every hour
+    - cron: '0 * * * *'
+  workflow_dispatch:
+    inputs:
+      verbose:
+        description: 'Enable verbose output'
+        required: false
+        default: 'false'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.23'
+
+      - name: Build Orbit
+        run: go build -o signal ./cmd/signal
+
+      - name: Generate feeds
+        run: |
+          VERBOSE_FLAG=""
+          if [ "${{ github.event.inputs.verbose }}" = "true" ]; then
+            VERBOSE_FLAG="-v"
+          fi
+          ./signal aggregate \
+            --opml feeds.json \
+            --output-dir data \
+            --output feeds.json \
+            --monthly \
+            --monthly-prefix feeds \
+            --latest-months 3 \
+            --atom atom.xml \
+            --title "My Signal Feed" \
+            $VERBOSE_FLAG
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add data/
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update feeds $(date -u +"%Y-%m-%d %H:%M:%S UTC")"
+            git push
+          fi
