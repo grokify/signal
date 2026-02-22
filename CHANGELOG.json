@@ -1,0 +1,44 @@
+{
+  "irVersion": "1.0",
+  "project": "signal",
+  "repository": "https://github.com/grokify/signal",
+  "versioning": "semver",
+  "commitConvention": "conventional",
+  "maintainers": ["grokify"],
+  "releases": [
+    {
+      "version": "v0.1.0",
+      "date": "2026-02-22",
+      "highlights": [
+        { "description": "Planet-style blog aggregator with JSON Feed 1.1 output designed for AI agents and human readers" },
+        { "description": "Agent-friendly API structure with predictable URLs, schema.json, and AGENTS.md" },
+        { "description": "Priority links for hand-curated content with discussion links and image pins" }
+      ],
+      "added": [
+        { "description": "JSON Feed 1.1 specification types with Signal extensions (`_signal_feed_title`, `_signal_priority`, `_signal_discussions`, `_signal_source`)", "commit": "79b787a" },
+        { "description": "Core entry types with deduplication, sorting, filtering, and JSON Feed conversion", "commit": "79b787a" },
+        { "description": "OPML in JSON format for feed source management", "commit": "b12db8a" },
+        { "description": "Priority links package for hand-curated content with discussions (HackerNews, Reddit, Lobsters) and image pins", "commit": "b12db8a" },
+        { "description": "Monthly file splitting with merge mode to preserve historical entries", "commit": "b12db8a" },
+        { "description": "Feed aggregator with concurrent RSS/Atom fetching and progress reporting", "commit": "54da899" },
+        { "description": "Agent-friendly API generation with schema.json, AGENTS.md, and organized endpoints (by-month, by-source, by-tag)", "commit": "b138d82" },
+        { "description": "Atom feed output generation for RSS reader compatibility", "commit": "b138d82" },
+        { "description": "Cobra-based CLI with `aggregate` command supporting OPML input, priority links, monthly splitting, and API generation", "commit": "9567ba3" },
+        { "description": "Source platform metadata support for LinkedIn, Twitter, and other platforms", "commit": "79b787a" },
+        { "description": "Discussion links support for HackerNews, Reddit, and Lobsters with score and comment counts", "commit": "79b787a" },
+        { "description": "Image pins for visual content (LinkedIn posts, articles with hero images)", "commit": "79b787a" }
+      ],
+      "documentation": [
+        { "description": "README with feature overview, usage examples, and architecture diagram", "commit": "2df0374" },
+        { "description": "PRD (Product Requirements Document)", "commit": "2df0374" },
+        { "description": "TRD (Technical Requirements Document)", "commit": "2df0374" },
+        { "description": "Claude Code project instructions (.claude/CLAUDE.md)", "commit": "29fcd62" }
+      ],
+      "build": [
+        { "description": "Go module with dependencies for RSS/Atom parsing and feed generation", "commit": "1d1b1c7" },
+        { "description": "GitHub Actions workflow for automated feed updates", "commit": "29fcd62" },
+        { "description": "MIT License", "commit": "29fcd62" }
+      ]
+    }
+  ]
+}
