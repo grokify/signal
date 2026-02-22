@@ -4,15 +4,15 @@ Signal is a Go-based Planet-style blog aggregator that outputs [JSON Feed 1.1](h
 
 ## Features
 
-- **JSON Feed 1.1 Output** - Standard format with Signal extensions for feed metadata
-- **OPML in JSON** - Maintain feed lists in JSON while preserving OPML semantics
-- **Monthly Archives** - Split output into monthly files to avoid ever-growing files
-- **Merge Mode** - Preserves historical entries even after they fall off source feeds
-- **Priority Links** - Hand-curated links that appear at the top of feeds
-- **Atom Generation** - Optional Atom feed output for RSS readers
-- **Tag Filtering** - Filter entries by tags/keywords
-- **Concurrent Fetching** - Fast parallel feed fetching
-- **GitHub Actions Ready** - Built for automated updates in CI/CD
+- 📄 **JSON Feed 1.1 Output** - Standard format with Signal extensions for feed metadata
+- 📂 **OPML in JSON** - Maintain feed lists in JSON while preserving OPML semantics
+- 📅 **Monthly Archives** - Split output into monthly files to avoid ever-growing files
+- 🔄 **Merge Mode** - Preserves historical entries even after they fall off source feeds
+- ⭐ **Priority Links** - Hand-curated links that appear at the top of feeds
+- ⚛️ **Atom Generation** - Optional Atom feed output for RSS readers
+- 🏷️ **Tag Filtering** - Filter entries by tags/keywords
+- ⚡ **Concurrent Fetching** - Fast parallel feed fetching
+- 🤖 **GitHub Actions Ready** - Built for automated updates in CI/CD
 
 ## Installation
 
