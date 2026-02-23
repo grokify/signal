@@ -5,7 +5,7 @@ go 1.25.0
 require (
 	github.com/grokify/mogo v0.73.2
 	github.com/mmcdole/gofeed v1.3.0
-	github.com/spf13/cobra v1.8.1
+	github.com/spf13/cobra v1.10.2
 )
 
 require (
@@ -16,7 +16,7 @@ require (
 	github.com/mmcdole/goxpp v1.1.1-0.20240225020742-a0c311522b23 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect
-	github.com/spf13/pflag v1.0.5 // indirect
+	github.com/spf13/pflag v1.0.9 // indirect
 	golang.org/x/net v0.50.0 // indirect
 	golang.org/x/text v0.34.0 // indirect
 )
