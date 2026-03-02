@@ -5,6 +5,7 @@
 [![Go SAST][go-sast-svg]][go-sast-url]
 [![Go Report Card][goreport-svg]][goreport-url]
 [![Docs][docs-godoc-svg]][docs-godoc-url]
+[![Visualization][viz-svg]][viz-url]
 [![License][license-svg]][license-url]
 
 Signal is a Go-based Planet-style blog aggregator that outputs [JSON Feed 1.1](https://jsonfeed.org/version/1.1) files. It's designed to be used in CI/CD pipelines (like GitHub Actions) to automatically aggregate RSS/Atom feeds and generate static JSON files that any frontend can consume.
@@ -419,5 +420,9 @@ MIT License
  [goreport-url]: https://goreportcard.com/report/github.com/grokify/signal
  [docs-godoc-svg]: https://pkg.go.dev/badge/github.com/grokify/signal
  [docs-godoc-url]: https://pkg.go.dev/github.com/grokify/signal
+ [viz-svg]: https://img.shields.io/badge/visualizaton-Go-blue.svg
+ [viz-url]: https://mango-dune-07a8b7110.1.azurestaticapps.net/?repo=grokify%2Fsignal
+ [loc-svg]: https://tokei.rs/b1/github/grokify/signal
+ [repo-url]: https://github.com/grokify/signal
  [license-svg]: https://img.shields.io/badge/license-MIT-blue.svg
- [license-url]: https://github.com/grokify/signal/blob/main/LICENSE
+ [license-url]: https://github.com/grokify/signal/blob/master/LICENSE
