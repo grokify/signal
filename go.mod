@@ -3,7 +3,7 @@ module github.com/grokify/signal
 go 1.25.0
 
 require (
-	github.com/grokify/mogo v0.73.3
+	github.com/grokify/mogo v0.73.4
 	github.com/mmcdole/gofeed v1.3.0
 	github.com/spf13/cobra v1.10.2
 )
