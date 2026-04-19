@@ -23,7 +23,7 @@
  [loc-svg]: https://tokei.rs/b1/github/grokify/signal
  [repo-url]: https://github.com/grokify/signal
  [license-svg]: https://img.shields.io/badge/license-MIT-blue.svg
- [license-url]: https://github.com/grokify/signal/blob/master/LICENSE
+ [license-url]: https://github.com/grokify/signal/blob/main/LICENSE
 
 Signal is a Go-based Planet-style blog aggregator that outputs [JSON Feed 1.1](https://jsonfeed.org/version/1.1) files. It's designed to be used in CI/CD pipelines (like GitHub Actions) to automatically aggregate RSS/Atom feeds and generate static JSON files that any frontend can consume.
 
