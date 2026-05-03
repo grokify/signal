@@ -18,7 +18,7 @@
  [goreport-url]: https://goreportcard.com/report/github.com/grokify/signal
  [docs-godoc-svg]: https://pkg.go.dev/badge/github.com/grokify/signal
  [docs-godoc-url]: https://pkg.go.dev/github.com/grokify/signal
- [viz-svg]: https://img.shields.io/badge/visualizaton-Go-blue.svg
+ [viz-svg]: https://img.shields.io/badge/visualization-Go-blue.svg
  [viz-url]: https://mango-dune-07a8b7110.1.azurestaticapps.net/?repo=grokify%2Fsignal
  [loc-svg]: https://tokei.rs/b1/github/grokify/signal
  [repo-url]: https://github.com/grokify/signal
