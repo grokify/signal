@@ -4,7 +4,7 @@ go 1.26.0
 
 require (
 	github.com/grokify/mogo v0.75.0
-	github.com/mmcdole/gofeed v1.4.1
+	github.com/mmcdole/gofeed v1.5.0
 	github.com/spf13/cobra v1.10.2
 )
 
